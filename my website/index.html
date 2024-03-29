@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .header{
+            padding: 60px;
+            text-align: center;
+            background-color:rgb(5, 198, 130) ;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            background-color: black;
+        }
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color:  #ddd;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .main{
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        .img{
+           
+            width: 100%;
+            padding: 20px;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+
+        }
+        @media screen and (max-width : 700px){
+            .row,.navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Welcome to my website</p>
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Settings</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>photo of me</h5>
+           <img class="img" src="/my website/images/img.avif" alt="">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <h3>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <img src="/my website/images/download.jpeg" class="img" alt=""><br>
+            <img src="/my website/images/download (1).jpeg" class="img" alt=""><br>
+           <img src="/my website/images/download (2).jpeg" class="img" alt="">
+     </div>
+     <div class="main">
+        <h2>Title Heading</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <img src="/my website/images/img2.webp" class="img" alt="">
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <br>
+        <h2>Title Heading</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+       <img src="/my website/images/images (1).jpeg" class="img" alt="">
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        
+     </div>
+    </div>
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
+</body>
+</html>
